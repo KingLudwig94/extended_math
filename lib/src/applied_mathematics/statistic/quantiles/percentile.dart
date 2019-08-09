@@ -26,7 +26,7 @@ class Percentile extends Quantile {
   int number;
 
   /// Computes ordinal rank of this [Percentile]
-  int ordinalRank() => ((number / 100) * data.itemsCount).ceil();
+  int ordinalRank() => ((number / 100) * data.itemsCount-1).ceil();
 
   /// Gets  the smallest value in the list such that no more than
   /// [number] percent of the data is strictly less than the value and at
